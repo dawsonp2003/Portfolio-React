@@ -7,14 +7,13 @@ import Socials from "../components/Socials";
 import Button from "../components/Button";
 import { useTheme } from "next-themes";
 // Data
-import { name, showResume } from "../data/portfolio.json";
-import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
 
 const Resume = () => {
   const router = useRouter();
   const theme = useTheme();
   const [mount, setMount] = useState(false);
+  const { name, showResume, resume } = data;
 
   useEffect(() => {
     setMount(true);
@@ -84,7 +83,7 @@ const Resume = () => {
                 <h1 className="text-2xl font-bold">Skills</h1>
                 <div className="flex mob:flex-col desktop:flex-row justify-between">
                   {resume.languages && (
-                    <div className="mt-2 mob:mt-5">
+                    <div className="mt-2 mob:mt-5 desktop:flex-1">
                       <h2 className="text-lg">Languages</h2>
                       <ul className="list-disc">
                         {resume.languages.map((language, index) => (
@@ -97,7 +96,7 @@ const Resume = () => {
                   )}
 
                   {resume.frameworks && (
-                    <div className="mt-2 mob:mt-5">
+                    <div className="mt-2 mob:mt-5 desktop:flex-1">
                       <h2 className="text-lg">Frameworks</h2>
                       <ul className="list-disc">
                         {resume.frameworks.map((framework, index) => (
@@ -110,7 +109,7 @@ const Resume = () => {
                   )}
 
                   {resume.others && (
-                    <div className="mt-2 mob:mt-5">
+                    <div className="mt-2 mob:mt-5 desktop:flex-1">
                       <h2 className="text-lg">Others</h2>
                       <ul className="list-disc">
                         {resume.others.map((other, index) => (
