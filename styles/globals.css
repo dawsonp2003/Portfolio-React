@@ -75,3 +75,11 @@ body {
   background: inherit;
   border-radius: inherit;
 }
+
+.list-item {
+  display: flex;
+}
+.list-item::before {
+  content: "•"; /* The character for your bullet */
+  margin-right: 10px; /* Adds space between the bullet and the text */
+}

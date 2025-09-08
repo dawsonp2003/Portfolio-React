@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Header from "../components/Header";
-// import ServiceCard from "../components/ServiceCard";
+import ExperienceCard from "../components/ExperienceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
@@ -9,13 +9,13 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
-import Cursor from "../components/Cursor";
 
 // Local Data
 import data from "../data/portfolio.json";
 
 export default function Home() {
   // Ref
+  const projectRef = useRef();
   const workRef = useRef();
   const aboutRef = useRef();
   const textOne = useRef();
@@ -24,6 +24,14 @@ export default function Home() {
   const textFour = useRef();
 
   // Handling Scroll
+  const handleProjectScroll = () => {
+    window.scrollTo({
+      top: projectRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleWorkScroll = () => {
     window.scrollTo({
       top: workRef.current.offsetTop,
@@ -50,7 +58,6 @@ export default function Home() {
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
       </Head>
@@ -60,9 +67,11 @@ export default function Home() {
 
       <div className="container mx-auto mb-10">
         <Header
+          handleProjectScroll={handleProjectScroll}
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
+
         <div className="flex flex-col laptop:flex-row items-center laptop:items-start laptop:mt-20 mt-10">
           {/* Left Side: Image */}
           <div className="w-full laptop:w-1/4 flex justify-center laptop:justify-start">
@@ -106,13 +115,14 @@ export default function Home() {
             </div>
 
             <Socials className="mt-2 laptop:mt-5" />
+
           </div>
         </div>
 
 
         <br></br>
         <br></br>
-        <hr class="border-t-4 my-4 border-gray-300" ref={workRef}></hr>
+        <hr class="border-t-4 my-4 border-gray-300" ref={projectRef}></hr>
         <br></br>
         <br></br>
         <div className="mt-15 laptop:mt-45 p-2 laptop:p-0">
@@ -131,6 +141,30 @@ export default function Home() {
           </div>
         </div>
 
+
+        <br></br>
+        <br></br>
+        <hr class="border-t-4 my-4 border-gray-300" ref={workRef}></hr>
+        <br></br>
+        <br></br>
+        <div className="mt-15 laptop:mt-45 p-2 laptop:p-0">
+          <h1 className="text-5xl text-bold">Work Experience</h1>
+
+          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+            {data.resume.experiences.map((experience) => (
+              <ExperienceCard
+                key={experience.id}
+                dates={experience.dates}
+                type={experience.type}
+                position={experience.position}
+                bullets={experience.bullets}
+              />
+            ))}
+          </div>
+        </div>
+
+
+
         {/* This button should not go into production */}
         {process.env.NODE_ENV === "development" && (
           <div className="fixed bottom-5 right-5">
@@ -145,7 +179,7 @@ export default function Home() {
         <hr class="border-t-4 my-4 border-gray-300" ref={aboutRef}></hr>
         <br></br>
         <br></br>
-        <div className="mt-15 laptop:mt-45 p-2 laptop:p-0" ref={workRef}>
+        <div className="mt-15 laptop:mt-45 p-2 laptop:p-0">
           <h1 className="text-5xl text-bold">About Me</h1>
           <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
             {data.aboutpara}

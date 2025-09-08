@@ -15,59 +15,59 @@
   "projects": [
     {
       "id": "1",
-      "title": "Cetacean Enrichment AUV",
-      "description": "TinyML + embedded systems enabling two-way enrichment interactions with wild dolphins. (Google/DeepMind collaboration)",
-      "imageSrc": "/images/projects/dolphin.jpg",
-      "url": "/projects/dolphingemma"
+      "title": "Georgia Tech Research — Cetacean Enrichment AUV",
+      "description": "Bioacoustic Listening and Interactive Platform (BLIP) Google funded embedded system enabling wild dolphin communication",
+      "imageSrc": "/images/projects/dolphin/real_rov_spring25.jpg",
+      "url": "/blog/blip-summer25"
     },
     {
       "id": "2",
-      "title": "ASCEND Cloud Dashboard — Southern Company",
+      "title": "Southern Company Internship — Environment Dashboard",
       "description": "Power BI dashboard and environment telemetry for large-scale cloud migration and infrastructure monitoring.",
-      "imageSrc": "/images/powerbi-dashboard.jpg",
-      "url": "/projects/southern-ascend"
+      "imageSrc": "/images/projects/soco/soco_dashboard_summer25.jpg",
+      "url": "/blog/internship-southern-company"
     },
     {
       "id": "3",
       "title": "Kitchen Manager — Raspberry Pi Kiosk",
-      "description": "Raspberry Pi touchscreen kiosk for recipes, meal planning, grocery generation, and expiry tracking (React + local server).",
+      "description": "Raspberry Pi touchscreen kiosk for recipes, meal planning, grocery generation, and expiration tracking.",
       "imageSrc": "/images/kitchen-manager.jpg",
-      "url": "/projects/kitchen-manager"
+      "url": "/blog/project-kitchen-manager"
     },
     {
       "id": "4",
       "title": "Handeye Coordinator — Haptic Navigation Case",
       "description": "iPhone LiDAR + ESP32 haptic case for locomotion assistance for visually impaired users (Swift + Bluetooth + firmware).",
       "imageSrc": "/images/handeye-coordinator.jpg",
-      "url": "/projects/handeye-coordinator"
+      "url": "/blog/project-handeye-coordinator"
     },
     {
       "id": "5",
       "title": "Synthesizer Learning Toy",
       "description": "3D-printed educational toy with capacitive touch, audio/visual/tactile feedback for accessibility-focused STEM lessons.",
       "imageSrc": "/images/synth-toy.jpg",
-      "url": "/projects/synthesizer-toy"
+      "url": "/blog/project-synthesizer-toy"
     },
     {
       "id": "6",
       "title": "OpenGL Chess — GPU & CPU Multithreading",
       "description": "3D chess renderer built in OpenGL with vertex-based object files and multithreaded rendering optimizations.",
       "imageSrc": "/images/opengl-chess.jpg",
-      "url": "/projects/opengl-chess"
+      "url": "/blog/project-opengl-chess"
     },
     {
       "id": "7",
       "title": "VEX Robotics — Team Lead & Autonomous",
       "description": "Team rebuilding, mentoring, and autonomous system development (C++, PID, odometry) — multiple awards across tournaments.",
       "imageSrc": "/images/vex-robotics.jpg",
-      "url": "/projects/vex-robotics"
+      "url": "/blog/extracurricular-vex-robotics"
     },
     {
       "id": "8",
-      "title": "Productivity & Tools — PDF Filler, Meal Planner, Utility Apps",
+      "title": "PDF Filler Productivity Application",
       "description": "Small apps & tooling (React / Flask / Python) to simplify workflows — PDF auto-fill, grocery planners, utilities.",
       "imageSrc": "/images/productivity-tools.jpg",
-      "url": "/projects/productivity-tools"
+      "url": "/blog/project-pdf-filler"
     }
   ],
   "services": [],
