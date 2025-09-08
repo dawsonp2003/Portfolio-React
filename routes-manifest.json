@@ -57,15 +57,15 @@
   "dataRoutes": [
     {
       "page": "/blog",
-      "dataRouteRegex": "^/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog\\.json$"
+      "dataRouteRegex": "^/_next/data/FkcNXjdzuEual1e9zrrsH/blog\\.json$"
     },
     {
       "page": "/blog/[slug]",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
-      "dataRouteRegex": "^/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/(?<nxtPslug>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/FkcNXjdzuEual1e9zrrsH/blog/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/FkcNXjdzuEual1e9zrrsH/blog/(?<nxtPslug>[^/]+?)\\.json$"
     }
   ],
   "rsc": {

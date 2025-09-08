@@ -4,7 +4,7 @@
     "/blog": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog.json",
+      "dataRoute": "/_next/data/FkcNXjdzuEual1e9zrrsH/blog.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -17,7 +17,7 @@
     "/blog/blip-summer25": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/blog/[slug]",
-      "dataRoute": "/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/blip-summer25.json",
+      "dataRoute": "/_next/data/FkcNXjdzuEual1e9zrrsH/blog/blip-summer25.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -30,7 +30,7 @@
     "/blog/firstblog": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/blog/[slug]",
-      "dataRoute": "/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/firstblog.json",
+      "dataRoute": "/_next/data/FkcNXjdzuEual1e9zrrsH/blog/firstblog.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -43,7 +43,7 @@
     "/blog/secondblog": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/blog/[slug]",
-      "dataRoute": "/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/secondblog.json",
+      "dataRoute": "/_next/data/FkcNXjdzuEual1e9zrrsH/blog/secondblog.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -56,7 +56,7 @@
     "/blog/threeblog": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/blog/[slug]",
-      "dataRoute": "/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/threeblog.json",
+      "dataRoute": "/_next/data/FkcNXjdzuEual1e9zrrsH/blog/threeblog.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -70,9 +70,9 @@
   "dynamicRoutes": {
     "/blog/[slug]": {
       "routeRegex": "^/blog/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/[slug].json",
+      "dataRoute": "/_next/data/FkcNXjdzuEual1e9zrrsH/blog/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/oPnSbqeQ2Aul3cEoy1qma/blog/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/FkcNXjdzuEual1e9zrrsH/blog/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
