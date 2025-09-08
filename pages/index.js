@@ -122,7 +122,7 @@ export default function Home() {
 
         <br></br>
         <br></br>
-        <hr class="border-t-4 my-4 border-gray-300" ref={projectRef}></hr>
+        <hr className="border-t-4 my-4 border-gray-300" ref={projectRef}></hr>
         <br></br>
         <br></br>
         <div className="mt-15 laptop:mt-45 p-2 laptop:p-0">
@@ -144,7 +144,7 @@ export default function Home() {
 
         <br></br>
         <br></br>
-        <hr class="border-t-4 my-4 border-gray-300" ref={workRef}></hr>
+        <hr className="border-t-4 my-4 border-gray-300" ref={workRef}></hr>
         <br></br>
         <br></br>
         <div className="mt-15 laptop:mt-45 p-2 laptop:p-0">
@@ -176,7 +176,7 @@ export default function Home() {
         
         <br></br>
         <br></br>
-        <hr class="border-t-4 my-4 border-gray-300" ref={aboutRef}></hr>
+        <hr className="border-t-4 my-4 border-gray-300" ref={aboutRef}></hr>
         <br></br>
         <br></br>
         <div className="mt-15 laptop:mt-45 p-2 laptop:p-0">
